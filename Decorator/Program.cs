@@ -3,9 +3,9 @@
 
 IDamageable unit = new Unit();
 
-IAbility ability = new BaseAbility(10, TypeDamage.Physical);
-
-ability = new AbilityAdditionalDamage(ability, 5, TypeDamage.Magical);
-ability = new AbilityAdditionalDamage(ability, 7, TypeDamage.Pure);
+IAbility ability = new SimpleAbility(10, TypeDamage.Physical);
+ability = new AbilityDurationDamage(ability, 10, 3);
 
 ability.ApplyDamage(unit);
+
+Console.ReadKey();

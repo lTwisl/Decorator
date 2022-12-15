@@ -1,11 +1,11 @@
 ﻿namespace Decorator
 {
-    internal class BaseAbility : IAbility
+    internal class SimpleAbility : IAbility
     {
         private float _damage;
         private TypeDamage _typeDamage;
 
-        public BaseAbility(float damage, TypeDamage typeDamage)
+        public SimpleAbility(float damage, TypeDamage typeDamage)
         {
             _damage = damage;
             _typeDamage = typeDamage;
